@@ -609,7 +609,21 @@
     
     
   </div>
-
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  //id: '页面 ID', // 可选。默认为 location.hrefid: '页面 ID', // 可选。默认为 location.href
+	owner: 'agentwangz@163.com',
+  repo: 'commentrepo',
+  oauth: {
+    client_id: 'd1f7315c0cd7bad88369',
+    client_secret: 'e8d47437e19760c1164b221bc6e0cbe24ce8e221',
+  },
+})
+gitment.render('container')
+</script>
   
 
 <script type="text/javascript">
